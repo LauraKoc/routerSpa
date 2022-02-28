@@ -1,4 +1,4 @@
 # A basic redirects rule
 [[redirects]]
   from = "/about"
-  to = "/about.html"
+  to = "/about"
