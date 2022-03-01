@@ -13,7 +13,8 @@ const route = (event) => {
 const routes = {
   404: "/pages/404.html",
   "/": "/pages/index.html",
-  "/about": "/pages/about.html"
+  "/about": "/pages/about.html",
+  "/ru/about": "/pages/about.html"
 };
 
 const handleLocation = async () => {
