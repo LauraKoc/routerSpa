@@ -3,17 +3,17 @@ import { sayHi, sayBye } from "./about.js";
 console.log("says", sayHi);
 console.log("says", sayBye);
 
-const ruRoute = window.location.href + `${"/ru/about"}`;
-const ruBtn = document.querySelector(".ruBtn");
-ruBtn.addEventListener("click", function() {
-  if (window.location.href) {
-    if (window.location.href === ruRoute) {
-      console.log("ru/about");
-    } else {
-      console.log("false");
-    }
-  }
-});
+// const ruRoute = window.location.href + `${"/ru/about"}`;
+// const ruBtn = document.querySelector(".ruBtn");
+// ruBtn.addEventListener("click", function() {
+//   if (window.location.href) {
+//     if (window.location.href === ruRoute) {
+//       console.log("ru/about");
+//     } else {
+//       console.log("false");
+//     }
+//   }
+// });
 
 const route = (event) => {
   event = event || window.event;
