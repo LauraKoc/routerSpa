@@ -1,5 +1,8 @@
 import { sayHi, sayBye } from "./app.js";
 
+console.log("says", sayHi);
+console.log("says", sayBye);
+
 const route = (event) => {
   event = event || window.event;
   event.preventDefault();
