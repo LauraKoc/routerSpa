@@ -13,8 +13,8 @@ btn.addEventListener('click', function() {
 });
 
 
-// window.addEventListener('load', function() {
-//     const preloader = document.querySelector('.preloader');
-//     preloader.classList.add("hide-preloader");
-// })
+window.addEventListener('load', function() {
+    const preloader = document.querySelector('.preloader');
+    preloader.classList.add("hide-preloader");
+})
 

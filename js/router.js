@@ -3,10 +3,14 @@ import { sayHi, sayBye } from "./about.js";
 console.log("says", sayHi);
 console.log("says", sayBye);
 
+const home = document.querySelector('header')
+
+
 const ruRoute = window.location.href + `${"/ru/about"}`;
 const ruBtn = document.querySelector(".ruBtn");
 ruBtn.addEventListener("click", function() {
   route()
+  document.querySelector('body').removeChild(home)
   if (window.location.href) {
     if (window.location.href === ruRoute) {
       console.log("ru/about");
