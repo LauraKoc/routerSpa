@@ -1,8 +1,5 @@
 import { sayHi, sayBye } from "./components/about.js";
 
-import foo from "./components/navigation.js";
- // hello!
-
 // console.log("says", sayHi);
 // console.log("says", sayBye);
 
@@ -15,20 +12,21 @@ console.log("ruRoute", ruRoute);
 
 const ruBtn = document.querySelector(".ruBtn");
 ruBtn.addEventListener("click", function() {
-
   route()
   document.querySelector('body').removeChild(home)
   if (window.location.href) {
     if (window.location.href === ruRoute) {
-      const navMenu = document.getElementById('nav-menu');
-
-      console.log("hello!", navMenu) 
       console.log("ru");
+      const test = document.querySelector('nav');
+      console.log("test", test);
     } else {
       console.log("false");
     }
   }
 });
+
+
+
 
 const route = (event) => {
   event = event || window.event;
