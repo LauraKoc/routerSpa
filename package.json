@@ -2,9 +2,6 @@
   "name": "sparoutervanillajs",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "devStart": "nodemon server.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LauraKoc/routerSpa.git"
