@@ -1,19 +1,29 @@
-import { sayHi, sayBye } from "./about.js";
+import { sayHi, sayBye } from "./components/about.js";
 
-console.log("says", sayHi);
-console.log("says", sayBye);
+import foo from "./components/navigation.js";
+ // hello!
+
+// console.log("says", sayHi);
+// console.log("says", sayBye);
 
 const home = document.querySelector('header')
 
 
-const ruRoute = window.location.href + `${"/ru/about"}`;
+const ruRoute = window.location.href + `${"ru"}`;
+console.log("ruRoute", ruRoute);
+
+
 const ruBtn = document.querySelector(".ruBtn");
 ruBtn.addEventListener("click", function() {
+
   route()
   document.querySelector('body').removeChild(home)
   if (window.location.href) {
     if (window.location.href === ruRoute) {
-      console.log("ru/about");
+      const navMenu = document.getElementById('nav-menu');
+
+      console.log("hello!", navMenu) 
+      console.log("ru");
     } else {
       console.log("false");
     }
