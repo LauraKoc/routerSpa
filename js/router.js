@@ -1,8 +1,5 @@
 import { sayHi, sayBye } from "./app.js";
 
-sayHi("John"); // Hello, John!
-sayBye("John"); // Bye, John!
-
 const route = (event) => {
   event = event || window.event;
   event.preventDefault();
