@@ -3,13 +3,12 @@ import { sayHi, sayBye } from "./about.js";
 console.log("says", sayHi);
 console.log("says", sayBye);
 
-const ruRoute = window.location.href + `${"/lv"}`;
-const ruBtn = document.querySelector(".lvBtn");
-ruBtn.addEventListener("click", function(e) {
-  e.preventDefault();
+const ruRoute = window.location.href + `${"/ru/about"}`;
+const ruBtn = document.querySelector(".ruBtn");
+ruBtn.addEventListener("click", function() {
   if (window.location.href) {
     if (window.location.href === ruRoute) {
-      console.log("lv");
+      console.log("ru/about");
     } else {
       console.log("false");
     }
@@ -25,8 +24,8 @@ const route = (event) => {
 
 const routes = {
   404: "/pages/404.html",
-  "/": "./index.html",
-  "/lv": "./pages/home.html",
+  "/": "/pages/home.html",
+  "/lv": "/pages/home.html",
   "/ru": "/pages/home.html",
   "/lv/about": "/pages/about.html",
   "/ru/about": "/pages/about.html",

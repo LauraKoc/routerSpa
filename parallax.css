@@ -9,7 +9,7 @@ header {
     background: linear-gradient(240deg, #834d4d, #503d3d);
     position: relative;
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     z-index: -1;
 }
 
