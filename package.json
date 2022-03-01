@@ -1,0 +1,16 @@
+{
+  "name": "sparoutervanillajs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LauraKoc/routerSpa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LauraKoc/routerSpa/issues"
+  },
+  "homepage": "https://github.com/LauraKoc/routerSpa#readme",
+  "description": ""
+}
