@@ -5,7 +5,7 @@ console.log("says", sayBye);
 
 const ruRoute = window.location.href + `${"/lv"}`;
 const ruBtn = document.querySelector(".lvBtn");
-ruBtn.addEventListener("click", () => {
+ruBtn.addEventListener("click", function() {
   if (window.location.href) {
     if (window.location.href === ruRoute) {
       console.log("lv");
