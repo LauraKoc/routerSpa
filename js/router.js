@@ -1,7 +1,25 @@
-import { sayHi, sayBye } from "./app.js";
+import { sayHi, sayBye } from "./about.js";
 
 console.log("says", sayHi);
 console.log("says", sayBye);
+
+
+const ruRoute = window.location.host + `${'/ru/about'}`
+const a =  window.location.href + `${'/ru/about'}`
+console.log(a)
+
+
+
+const ruBtn = document.querySelector('.ruBtn')
+ruBtn.addEventListener('click', () => {
+  if(ruRoute === a ) {
+    console.log('aaaaa')
+  } else {
+    console.log('false')
+  
+  }
+})
+
 
 const route = (event) => {
   event = event || window.event;
