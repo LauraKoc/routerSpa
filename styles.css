@@ -276,6 +276,14 @@ header::after {
 .lang-container {
     display: flex;
 }
+
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 600px) {
     .lang-container {
        flex-direction: column;
@@ -300,3 +308,6 @@ header::after {
   font-size: 35px;
   color: #fff;
 }
+
+
+

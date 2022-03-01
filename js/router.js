@@ -3,23 +3,17 @@ import { sayHi, sayBye } from "./about.js";
 console.log("says", sayHi);
 console.log("says", sayBye);
 
-
-const ruRoute = window.location.host + `${'/ru/about'}`
-const a =  window.location.href + `${'/ru/about'}`
-console.log(a)
-
-
-
-const ruBtn = document.querySelector('.ruBtn')
-ruBtn.addEventListener('click', () => {
-  if(ruRoute === a ) {
-    console.log('aaaaa')
-  } else {
-    console.log('false')
-  
+const ruRoute = window.location.href + `${"/lv"}`;
+const ruBtn = document.querySelector(".lvBtn");
+ruBtn.addEventListener("click", () => {
+  if (window.location.href) {
+    if (window.location.href === ruRoute) {
+      console.log("lv");
+    } else {
+      console.log("false");
+    }
   }
-})
-
+});
 
 const route = (event) => {
   event = event || window.event;
@@ -30,9 +24,11 @@ const route = (event) => {
 
 const routes = {
   404: "/pages/404.html",
-  "/": "/pages/index.html",
-  "/about": "/pages/about.html",
-  "/ru/about": "/pages/about.html"
+  "/": "./index.html",
+  "/lv": "./pages/home.html",
+  "/ru": "/pages/home.html",
+  "/lv/about": "/pages/about.html",
+  "/ru/about": "/pages/about.html",
 };
 
 const handleLocation = async () => {

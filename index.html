@@ -10,76 +10,76 @@
   </head>
   <body>
 
-    <div id="root">
+    <!-- <div id="">
       <nav id="main-nav" class="sidebar">
         <a href="/" onclick="route()">Home</a>
         <a href="/about" onclick="route()">About</a>
         <p>aaaaa</p>
         <a href="ru/about" onclick="route()" class="ruBtn" >Ru</a>
-      <div id="main-page"></div>
-    </div>
-
-    <div class="preloader">
-      <img src="./preloader.gif" alt="preloader" />
-    </div>
-    <header>
-      <video class="video-container" muted autoplay loop>
-        <source src="./video.mp4" type="video/mp4" />
-      </video>
-      <a class="parallax" href="parallax.html">Нажми тут</a>
-      <div class="lang-container">
-       
-        <div class="lang-wrap">
-          <div class="lang-img">
-          <a href="http://cirk.lv/lv/home.html">
-            <img src="./img/lv.png" alt="" />
-          </div>
-          <div class="lang-text">
-            <p>IEEJA</p>
-          </div>
-        </a>
-        </div>
-        <div class="lang-wrap">
-          <a href="http://cirk.lv/ru/home.html">
-          <div class="lang-img">
-            <img src="img/ru.png" alt="" />
-          </div>
-          <div class="lang-text">
-            <p>ВХОД</p>
-          </div>
-          </a>
-        </div>
-        <div class="lang-wrap">
-          <a href="http://cirk.lv/en/home.html">
-          <div class="lang-img">
-            <img src="img/en.png" alt="" />
-          </div>
-          <div class="lang-text">
-            <p>ENTER</p>
-          </div>
-        </a>
-        </div>
-        <div class="lang-wrap">
-          <a href="http://cirk.lv/es/home.html">
-            <div class="lang-img">
-              <img src="img/es.png" alt="" />
+      </div> -->
+      <div id="main-page">
+      <div class="preloader">
+        <img src="./preloader.gif" alt="preloader" />
+      </div>
+      <header>
+        <video class="video-container" muted autoplay loop>
+          <source src="./video.mp4" type="video/mp4" />
+        </video>
+        <a class="parallax" href="parallax.html">Нажми тут</a>
+        <div class="lang-container">
+         
+          <div class="lang-wrap" class="lvBtn">
+            <a href="/lv" onclick="route()" >
+              <a href="/lv" onclick="route()">Home</a>
+              <div class="lang-img">
+              <img src="./img/lv.png" alt="" />
             </div>
             <div class="lang-text">
-              <p>ENTRADA</p>
+              <p>IEEJA</p>
             </div>
           </a>
+          </div>
+          <div class="lang-wrap">
+            <a href="http://cirk.lv/ru/home.html">
+            <div class="lang-img">
+              <img src="img/ru.png" alt="" />
+            </div>
+            <div class="lang-text">
+              <p>ВХОД</p>
+            </div>
+            </a>
+          </div>
+          <div class="lang-wrap">
+            <a href="http://cirk.lv/en/home.html">
+            <div class="lang-img">
+              <img src="img/en.png" alt="" />
+            </div>
+            <div class="lang-text">
+              <p>ENTER</p>
+            </div>
+          </a>
+          </div>
+          <div class="lang-wrap">
+            <a href="http://cirk.lv/es/home.html">
+              <div class="lang-img">
+                <img src="img/es.png" alt="" />
+              </div>
+              <div class="lang-text">
+                <p>ENTRADA</p>
+              </div>
+            </a>
+          </div>
         </div>
-      </div>
-
-      <button class="switch-btn">
-        <span>play</span>
-        <span>pause</span>
-        <span class="switch"></span>
-      </button>
-    </header>
-
+  
+        <button class="switch-btn">
+          <span>play</span>
+          <span>pause</span>
+          <span class="switch"></span>
+        </button>
+      </header>
+    </div>
     <!-- javascript -->
-    <script src="appp.js"></script>
+    <script src="./app.js"></script>
     <script type="module" src="js/router.js"></script>
   </body>
 </html>
